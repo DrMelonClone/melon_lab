@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe8d32;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: NotoSansKR-Black, 'Noto Sans KR';
+        font-size: 48px;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="100.24" cy="100.47" r="98.59"/>
+  <text class="cls-2" transform="translate(16.65 115.91)"><tspan x="0" y="0">Vi</tspan><tspan class="cls-3" x="46.27" y="0">t</tspan><tspan x="66.14" y="0">a - C</tspan></text>
+</svg>

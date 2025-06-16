@@ -1,0 +1,92 @@
+body {
+        background-image: url('images/background.png'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+}
+
+#typo {
+  color: #fe8d32;
+  font: 800 200px "Noto Sans KR";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #fe8d32;
+    line-height: 150%;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+hr {
+    width: 50%;
+    height:5px;
+    border:0;
+    background-color:#fe8d32;
+}
+
+a:link {
+  color : #fe8d32;
+  text-decoration: none;
+}
+
+a:visited {
+  color : #fe8d32;
+  text-decoration: none;
+}
+
+a:hover {
+  color : #fe8d32;
+  text-decoration: underline;
+}
+
+a:active {
+  color : #fe8d32;
+  text-decoration: none;
+}
+
+#top_button {
+    position: fixed;
+    bottom: 0;
+    right: 100;
+}
+
+.flip { 
+  width:290px;
+  height: 365px;
+  perspective: 1100px;
+}
+
+.card {
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+  transition: .4s;
+  transform-style: preserve-3d;
+}	
+
+.front, .back {
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back { 
+  transform: rotateY(180deg);
+}
+
+.flip:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-title {
+  color: #fe8d32;
+}
+
+.nav-link:hover {
+  color: #fe8d32;
+  background-color: #a2e675;
+  text-decoration: none;
+}
+
+
+

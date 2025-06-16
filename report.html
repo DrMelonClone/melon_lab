@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>melon lab_report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <nav class="navbar" id="top">
+        <div class="container-fluid justify-content-between ">
+            <a class="navbar-brand ms-4" href="about.html">
+                <img src="images/info.svg" alt="Logo" width="40" height="40">
+            </a>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Logo" width="50" height="50">
+            </a>
+
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <img src="images/menu.svg" alt="Logo" width="40" height="40">
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title" id="offcanvasRightLabel" style="color: #fe8d32;">Menu</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">홈페이지</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">사이트 소개</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_melon.html">멜론에 대하여</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="food.html">멜론 가공 식품</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="item.html">멜론 모티브 상품</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="report.html">제보란</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="container-sm bg-white position-absolute top-50 start-50 translate-middle">
+        <div class="row justify-content-center text-center m-5" >
+            <h1>제보를 받습니다</h1>
+        </div>
+      
+        <div class="row justify-content-center text-center m-5" >
+            <hr>
+            <h6>
+                <br>
+                여러분이 알고 있는 멜론 제품에 대해 알려주세요!
+                <br>
+                제보받은 제품은 제가 직접 연구를 진행한 후 사이트에 리뷰를 올릴 예정입니다.
+                <br>
+                멜론 애호가 여러분의 많은 제보를 바랍니다.
+            </h6>
+        </div>
+
+        
+        <form>
+            <div class="mb-3">
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">제품명</label>
+                </div>
+                
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">추가 설명</label>
+                </div>
+            </div>
+            <!--<button type="submit" class="btn text-white mb-3 float-sm-end" style="background-color: #fe8d32;">제출</button>-->
+            <button type="button" class="btn text-white mb-3 float-sm-end" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #fe8d32;">제출</button>
+        </form>
+        
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">안내문</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    해당 기능은 실제로 작동하지 않는 더미 기능입니다.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: #a2e675;;">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <footer class="bg-transparent">
+            <div class="container text-center" style="color: #fe8d32;">
+                <p class="py-2 mb-0">Copyright <i class="bi bi-c-circle"></i> 2025 Designed by 박은조</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
